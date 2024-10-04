@@ -134,13 +134,36 @@
         
       </header>
 
-      <main class="space-y-14">
+      <main class="space-y-4">
         <div class="w-full max-w-sm mx-auto mt-5">
-          <form class="flex items-center mb-14">
-            <input type="text" name="" id="" placeholder="search..." class="w-full px-4 py-2 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-            <button class="btn btn-success">Search</button>
-          </form>
+          <div class="flex items-center mb-8">
+            <input type="text" name="" id="search-box" placeholder="search..." class="w-full px-4 py-2 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <button onclick="handleSearch()" class="btn btn-success">Search</button>
+          </div>
         </div>
+
+        <!-- all phone show this container  -->
+         <div id="phones-container" class="phones-container flex justify-around items-center flex-wrap">
+
+
+                   <!-- here we showed our spinner  -->
+                   <div id="spinner"></div>
+
+
+         </div>
+
+         <div class="text-center">
+            <button onclick="handleShowAll()" class="btn btn-primary mb-8">Show All</button>
+         </div>
+
+
+
+          <!-- here we make our phone card  -->
+
+
+          <!-- show modal here  -->
+
+
       </main>
 
       <footer class="footer bg-neutral text-neutral-content p-10">
